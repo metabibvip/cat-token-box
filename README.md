@@ -7,8 +7,8 @@ sudo chmod +x ./install.sh
 ./install.sh
 
 how to mint:
-# change the gas fee accordingly , here assume it as 1000
 ./mint.sh 1000 
+# change the gas accordingly, here assume it as 1000
 
 如何安装:
 
@@ -20,5 +20,5 @@ sudo chmod +x ./install.sh
 
 如何mint:
 
-#假设GAS现在是1000,请自行调整
 ./mint.sh 1000
+# 自行调整GAS，这里假设是1000
