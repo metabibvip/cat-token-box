@@ -1,4 +1,4 @@
-how to install:
+# how to install:
 
 sudo apt install git -y
 
@@ -12,7 +12,7 @@ sudo chmod +x ./install.sh
 
 
 
-how to mint:
+# how to mint:
 
 ./mint.sh 1000 
 
@@ -23,7 +23,7 @@ how to mint:
 
 
 
-如何安装:
+# 如何安装:
 
 sudo apt install git -y
 
@@ -35,7 +35,7 @@ sudo chmod +x ./install.sh
 
 ./install.sh
 
-如何mint:
+# 如何mint:
 
 ./mint.sh 1000
 
