@@ -7,6 +7,7 @@ sudo chmod +x ./install.sh
 ./install.sh
 
 how to mint:
+
 ./mint.sh 1000 
 # change the gas accordingly, here assume it as 1000
 
