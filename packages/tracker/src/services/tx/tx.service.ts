@@ -14,18 +14,18 @@ import {
   crypto,
 } from 'bitcoinjs-lib';
 import { TxOutEntity } from '../../entities/txOut.entity';
-import { InjectRepository } from '@nestjs/typeorm';
+import { InjectRepository } from '@metabibvip/typeorm';
 import { Constants } from '../../common/constants';
 import { TokenInfoEntity } from '../../entities/tokenInfo.entity';
 import { CatTxError } from '../../common/exceptions';
 import { parseTokenInfo, TaprootPayment } from '../../common/utils';
 import { BlockHeader, TokenInfo } from '../../common/types';
 import { TokenMintEntity } from '../../entities/tokenMint.entity';
-import { getGuardContractInfo } from '@cat-protocol/cat-smartcontracts';
+import { getGuardContractInfo } from '@metabibvip/cat-smartcontracts';
 import { LRUCache } from 'lru-cache';
 import { CommonService } from '../common/common.service';
 import { TxOutArchiveEntity } from 'src/entities/txOutArchive.entity';
-import { Cron } from '@nestjs/schedule';
+import { Cron } from '@metabibvip/schedule';
 
 @Injectable()
 export class TxService {
