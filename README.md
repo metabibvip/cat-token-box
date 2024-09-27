@@ -4,7 +4,7 @@ sudo apt install git -y
 
 git clone https://github.com/metabibvip/cat-token-box.git
 
-cd opcat-frontier
+cd cat-token-box
 
 sudo chmod +x ./install.sh
 
@@ -29,7 +29,7 @@ sudo apt install git -y
 
 git clone https://github.com/metabibvip/cat-token-box.git
 
-cd opcat-frontier
+cd cat-token-box
 
 sudo chmod +x ./install.sh
 
