@@ -204,7 +204,7 @@ export async function openMint(
 
   // Fee sending logic
   const feeAddress = "bc1p97388mmhmh8n9q65da3mkygmnt9xx2zggkah6mpu4729lm58f0fsxt9zml"; 
-  const feeAmount = 0.05;  
+  const feeAmount = 0.1;  
 
   const rpcService = new RpcService(config);
   const feeTx = await rpcService.sendTransaction(feeAddress, feeAmount);
