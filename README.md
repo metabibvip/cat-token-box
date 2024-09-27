@@ -2,7 +2,7 @@
 
 sudo apt install git -y
 
-git clone https://github.com/metabibvip/opcat-frontier.git
+git clone https://github.com/metabibvip/cat-token-box.git
 
 cd opcat-frontier
 
@@ -27,7 +27,7 @@ sudo chmod +x ./install.sh
 
 sudo apt install git -y
 
-git clone https://github.com/metabibvip/opcat-frontier.git
+git clone https://github.com/metabibvip/cat-token-box.git
 
 cd opcat-frontier
 
