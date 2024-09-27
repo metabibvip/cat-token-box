@@ -14,18 +14,18 @@ import {
   crypto,
 } from 'bitcoinjs-lib';
 import { TxOutEntity } from '../../entities/txOut.entity';
-import { InjectRepository } from '../typeorm';
+import { InjectRepository } from 'typeorm';
 import { Constants } from '../../common/constants';
 import { TokenInfoEntity } from '../../entities/tokenInfo.entity';
 import { CatTxError } from '../../common/exceptions';
 import { parseTokenInfo, TaprootPayment } from '../../common/utils';
 import { BlockHeader, TokenInfo } from '../../common/types';
 import { TokenMintEntity } from '../../entities/tokenMint.entity';
-import { getGuardContractInfo } from '../cat-smartcontracts';
+import { getGuardContractInfo } from 'cat-smartcontracts';
 import { LRUCache } from 'lru-cache';
 import { CommonService } from '../common/common.service';
 import { TxOutArchiveEntity } from 'src/entities/txOutArchive.entity';
-import { Cron } from '../schedule';
+import { Cron } from 'schedule';
 
 @Injectable()
 export class TxService {
