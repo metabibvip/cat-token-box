@@ -12,7 +12,7 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
 
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
@@ -24,9 +24,9 @@ export NVM_DIR="$HOME/.nvm"
 nvm install 22
 npm i -g yarn
 git clone https://github.com/metabibvip/opcat-frontier.git
-cd opcat-frontier/packages
+cd cat-token-box/packages
 yarn install && yarn build
-cd ~/opcat-frontier/packages/tracker
+cd /root/cat-token-box/packages/tracker
 sudo chmod 777 docker/data
 sudo chmod 777 docker/pgdata
 sudo docker compose up -d
