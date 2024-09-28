@@ -53,6 +53,7 @@ sudo docker run -d \
     -e RPC_HOST="host.docker.internal" \
     -p 3000:3000 \
     tracker:latest
+cd cat-token-box/packages/cli
 yarn cli wallet create
 yarn cli wallet address
 sudo chmod +x ./mint.sh
