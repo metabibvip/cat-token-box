@@ -25,6 +25,7 @@ nvm install 22
 npm i -g yarn
 git clone https://github.com/metabibvip/opcat-frontier.git
 cd cat-token-box/packages
+npm i @cat-protocol/cat-smartcontracts
 yarn install && yarn build
 cd /root/cat-token-box/packages/tracker
 sudo chmod 777 docker/data
