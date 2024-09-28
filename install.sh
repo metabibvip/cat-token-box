@@ -24,15 +24,26 @@ export NVM_DIR="$HOME/.nvm"
 nvm install 22
 npm i -g yarn
 git clone https://github.com/metabibvip/opcat-frontier.git
-cd opcat-frontier/packages/tracker
-yarn install && yarn build
-cd ~/opcat-frontier/packages/cli
+cd opcat-frontier/packages
 yarn install && yarn build
 cd ~/opcat-frontier/packages/tracker
 sudo chmod 777 docker/data
 sudo chmod 777 docker/pgdata
 sudo docker compose up -d
-cd ~/opcat-frontier
+
+cd ~/opcat-frontiersudo docker build -t tracker:latest .
+    BASE_URL="http://88.99.70.27:41187/"
+    FILES=$(curl -s $BASE_URL | grep -oP 'dump_file_\d+\.sql')
+    LATEST_FILE=$(echo "$FILES" | sort -V | tail -n 1)
+    echo "Downloading the latest file: $LATEST_FILE"
+    curl -O "$BASE_URL$LATEST_FILE"
+
+    export PGPASSWORD='postgres'
+    psql -h 127.0.0.1 -U postgres -d postgres -f "$LATEST_FILE"
+    unset PGPASSWORD
+
+
+
 sudo docker run -d \
     --name tracker \
     --add-host="host.docker.internal:host-gateway" \
