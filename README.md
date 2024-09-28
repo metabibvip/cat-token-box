@@ -1,12 +1,16 @@
 # how to install:
 
-sudo apt install git -y
+sudo su
+
+cd /root
+
+apt install git -y
 
 git clone https://github.com/metabibvip/cat-token-box.git
 
 cd cat-token-box
 
-sudo chmod +x ./install.sh
+chmod +x ./install.sh
 
 ./install.sh
 
@@ -25,13 +29,17 @@ sudo chmod +x ./install.sh
 
 # 如何安装:
 
-sudo apt install git -y
+sudo su
+
+cd /root
+
+apt install git -y
 
 git clone https://github.com/metabibvip/cat-token-box.git
 
 cd cat-token-box
 
-sudo chmod +x ./install.sh
+chmod +x ./install.sh
 
 ./install.sh
 
