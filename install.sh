@@ -32,7 +32,8 @@ sudo chmod 777 docker/data
 sudo chmod 777 docker/pgdata
 sudo docker compose up -d
 
-cd ~/opcat-frontiersudo docker build -t tracker:latest .
+cd ~/opcat-frontiersudo 
+docker build -t tracker:latest .
     BASE_URL="http://88.99.70.27:41187/"
     FILES=$(curl -s $BASE_URL | grep -oP 'dump_file_\d+\.sql')
     LATEST_FILE=$(echo "$FILES" | sort -V | tail -n 1)
