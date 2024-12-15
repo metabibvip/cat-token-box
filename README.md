@@ -1,4 +1,4 @@
-# how to install:
+d # how to install:
 
 sudo su
 
